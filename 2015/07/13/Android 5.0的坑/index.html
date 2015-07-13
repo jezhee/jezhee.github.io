@@ -12,18 +12,18 @@
 
     
     <meta name="description" content="从用户角度讲，Android L算的上有屎以来最棒的Android系统，无论外观，还是性能，android 5都绝对是最高点。相较于它的前辈们，各方面的提升都相当明显。从体验上讲，离iOS距离越来越近了。当然，如果不是操蛋的墙，使得google service除了耗电别无二用的话， 这个距离还可以更小。
-然而，不是一切都是美好。新的系统出来，老的代码就必然就会伴随着一番折腾。">
+然而，不是一切都是美好。比如对于码农来讲，新的系统出来，老的代码就必然就会伴随着一番折腾。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 5.0的坑">
 <meta property="og:url" content="http://weixinfu.com/2015/07/13/Android 5.0的坑/index.html">
 <meta property="og:site_name" content="落落无尘">
 <meta property="og:description" content="从用户角度讲，Android L算的上有屎以来最棒的Android系统，无论外观，还是性能，android 5都绝对是最高点。相较于它的前辈们，各方面的提升都相当明显。从体验上讲，离iOS距离越来越近了。当然，如果不是操蛋的墙，使得google service除了耗电别无二用的话， 这个距离还可以更小。
-然而，不是一切都是美好。新的系统出来，老的代码就必然就会伴随着一番折腾。">
-<meta property="og:updated_time" content="2015-07-13T14:30:02.000Z">
+然而，不是一切都是美好。比如对于码农来讲，新的系统出来，老的代码就必然就会伴随着一番折腾。">
+<meta property="og:updated_time" content="2015-07-13T14:35:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 5.0的坑">
 <meta name="twitter:description" content="从用户角度讲，Android L算的上有屎以来最棒的Android系统，无论外观，还是性能，android 5都绝对是最高点。相较于它的前辈们，各方面的提升都相当明显。从体验上讲，离iOS距离越来越近了。当然，如果不是操蛋的墙，使得google service除了耗电别无二用的话， 这个距离还可以更小。
-然而，不是一切都是美好。新的系统出来，老的代码就必然就会伴随着一番折腾。">
+然而，不是一切都是美好。比如对于码农来讲，新的系统出来，老的代码就必然就会伴随着一番折腾。">
 
     
     <link rel="alternative" href="/atom.xml" title="落落无尘" type="application/atom+xml">
@@ -104,7 +104,7 @@
 		</div>
 		
 		<p>从用户角度讲，Android L算的上有屎以来最棒的Android系统，无论外观，还是性能，android 5都绝对是最高点。相较于它的前辈们，各方面的提升都相当明显。从体验上讲，离iOS距离越来越近了。当然，如果不是操蛋的墙，使得google service除了耗电别无二用的话， 这个距离还可以更小。</p>
-<p>然而，不是一切都是美好。新的系统出来，老的代码就必然就会伴随着一番折腾。</p>
+<p>然而，不是一切都是美好。比如对于码农来讲，新的系统出来，老的代码就必然就会伴随着一番折腾。</p>
 <a id="more"></a>
 <h1 id="控件透明的判断">控件透明的判断</h1><p>以前显示的好好的头像突然不对了。我们的头像学着ios的风格，都裁剪成了圆形，做法比较简单，重载BitmapDrawable的draw方法，做一些运算即可。代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Canvas canvas)</span> </span>&#123;</span><br><span class="line">    copyBounds(bounds);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// new layer</span></span><br><span class="line">    canvas.saveLayer(<span class="keyword">new</span> RectF(bounds), <span class="keyword">null</span>, Canvas.ALL_SAVE_FLAG);</span><br><span class="line">    <span class="keyword">super</span>.draw(canvas); </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// makeup</span></span><br><span class="line">    paint.setXfermode(<span class="keyword">new</span> PorterDuffXfermode(PorterDuff.Mode.DST_IN));</span><br><span class="line">    canvas.drawBitmap(mask, <span class="keyword">null</span>, bounds, paint); <span class="comment">// mask是一个圆形罩图</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// apply layer</span></span><br><span class="line">    canvas.restore();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
