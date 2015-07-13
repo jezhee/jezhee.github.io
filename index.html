@@ -1,0 +1,332 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>落落无尘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jezhee">
+    
+
+    
+    <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="落落无尘">
+<meta property="og:url" content="http://weixinfu.com/index.html">
+<meta property="og:site_name" content="落落无尘">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="落落无尘">
+<meta name="twitter:description">
+
+    
+    <link rel="alternative" href="/atom.xml" title="落落无尘" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="落落无尘" title="落落无尘"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="落落无尘">落落无尘</a></h1>
+				<h2 class="blog-motto">闲看庭前花开花落</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:weixinfu.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/07/12/nim-demo-guide/" title="" itemprop="url"></a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jezhee" target="_blank" itemprop="author">Jezhee</a>
+		
+  <p class="article-time">
+    <time datetime="2015-07-12T14:50:22.000Z" itemprop="datePublished"> 发表于 2015-07-12</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="云信demo结构说明">云信demo结构说明</h1><p>云信demo工程基于云信SDK，演示了SDK聊天，群组，实时音视频等功能接口的使用方法。用户可参照该demo，将云信SDK接入自己的app。</p>
+<h2 id="下载编译Demo">下载编译Demo</h2><p>用户可在<a href="http://netease.im/base.html?page=download" target="_blank" rel="external">云信官网</a>下载demo源码工程。</p>
+<p>总体环境需求：</p>
+<ul>
+<li>我们的部分代码会针对不同系统版本做优化，在新的平台上使用新的API。编译运行该demo的build tools最低版本要求为18。</li>
+<li>由于demo中使用到了部分java7以上的特性，因此JDK请使用JDK7或以上版本。</li>
+</ul>
+<p>如果你使用的IDE是Android Studio，可直接在IDE中打开demo工程，然后将工程目录下gradle.properties文件按照注释修改，就可以直接编译运行。</p>
+<ul>
+<li>如果你是第一次使用Android Studio，导入时会从gradle网站下载gradle发布包，在国内下载可能会比较慢。这时你也可以通过Android Studio设置，不使用gradle wrapper，改为使用local gradle distribution。</li>
+</ul>
+<p>如果你使用的IDE是Eclipse，可直接在IDE中打开工程，做如下修改后，即可编译运行。</p>
+<ul>
+<li>由于Eclipse不能配置jni库的位置，因此你需要把libs-sdk中的3个so库文件夹移动到libs目录下，才能使用录音及网络通话功能。</li>
+<li>注释掉AboutActivity中initViewData()函数的第一行。这行使用Android Studio编译期添加BuildConfig字段的特性，在Eclipse上无法完成，直接注释掉即可。</li>
+<li>如果你需要试验发送地理位置功能，请将AndroidManifest中的{AMAP_KEY}替换为demo/build.gradle文件中buildTypes内对应的值。在Android Studio上会在编译器自动替换。</li>
+<li>由于需要使用JDK7编译，旧版本的ADT插件仅支持到1.6，因此你需要使用最新的ADT版本（23.0及以上）才能正确编译demo。</li>
+</ul>
+<blockquote>
+<p>由于google已经将Android Studio作为官方开发工具，不再提供ADT Bundle下载，继续使用Eclipse开发会让你错过很多新特性，因此我们强烈建议你使用Android Studio开发基于云信SDK的app，该demo的很多自动化特性也将只有Android Studio才能体验到。</p>
+</blockquote>
+<h2 id="源码结构">源码结构</h2><ul>
+<li>Application入口：NimApplication, 包含SDK的初始化以及配置示例。</li>
+<li>登录相关：login包，包含一个比较典型的从第三方app授权，然后登录到云信服务器的例子。</li>
+<li>主界面：main包，包含最近联系人列表和好友/群组列表。该包作为各个功能的入口点，内含获取和管理最近联系人，获取群组列表，收发自定义通知等SDK接口使用示例。</li>
+<li>消息相关：session包，包含单聊/群聊界面。内含收发消息，上传下载消息附件，使用高清语音，管理消息历史等SDK接口使用示例。该包还有消息展示，使用emoji表情，发送图片等示例代码，可供开发者参考。</li>
+<li>群组相关：team包，包含群组信息界面。内含展示群资料，修改群资料，展示群成员列表，管理群成员列表等SDK接口使用示例。</li>
+<li>网络通话相关：avchat包，包含网络通话界面。内含网络通话功能的SDK接口使用示例，以及一个完整的网络通话流程示例，开发者可直接参考开发网络通话功能。</li>
+</ul>
+<h2 id="修改demo为己用">修改demo为己用</h2><p>云信demo实现了一个IM软件的所有基础功能，开发者可直接以demo为基础开发自己的IM软件，也可以稍作修改，用于前期流程验证，SDK开发指导等功能。</p>
+<ul>
+<li>如果你已经在云信官网上注册了app，你需要修改AndroidManifest中的“com.netease.nim.appKey”为你自己的appkey，否则登录会失败。</li>
+<li>你需要修改demo的好友获取方式。云信demo获取好友的代码在.contact.protocol包下，而用户资料缓存你可以直接重用。</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="Jezhee">Jezhee</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>
