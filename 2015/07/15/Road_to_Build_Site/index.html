@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://weixinfu.com/2015/07/15/Road_to_Build_Site/index.html">
 <meta property="og:site_name" content="落落无尘">
 <meta property="og:description" content="github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。">
-<meta property="og:updated_time" content="2015-07-15T14:20:30.000Z">
+<meta property="og:updated_time" content="2015-07-15T14:35:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Github pages使用hexo建立本博客的步骤记录">
 <meta name="twitter:description" content="github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。">
@@ -103,11 +103,12 @@
 <a id="more"></a>
 <h1 id="github开分支">github开分支</h1><p>一般个人使用的博客都不是和项目相关的，因此需要新建一个 ${github username}.github.io的项目，并将master分支作为建站主分支。注意，是github<em>.io</em>，不是 <em>.com</em>。</p>
 <h1 id="使用hexo建网站框架">使用hexo建网站框架</h1><p>参考 <a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a>。</p>
-<p>补充几处遗漏或瑕疵：</p>
-<ol>
-<li>如何部署：<br>要部署到github，需要先安装git插件：<br> $ npm install hexo-deployer-git</li>
-</ol>
-<h1 id="添加站内搜索">添加站内搜索</h1><p>使用的是jerryfu推荐的swifytype方案: <a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html" target="_blank" rel="external">利用swiftype为hexo添加站内搜索</a>.</p>
+<p>不过其中部署到github的代码有疏漏，要部署到github，需要先安装git插件：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>部署的代码也要改改，没有github这种type，需要改为如下：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">	<span class="attribute">type</span>: git</span><br><span class="line">	<span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:jezhee/jezhee.github.io.git</span><br><span class="line">	<span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+<h1 id="添加站内搜索">添加站内搜索</h1><p>使用百度的站内搜索貌似限制颇多，对我这个完全不懂前端，就想写写markdown的人来说略麻烦。</p>
+<p>使用的是jerryfu推荐的swifytype方案: <a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html" target="_blank" rel="external">利用swiftype为hexo添加站内搜索</a>.</p>
 <h1 id="图床">图床</h1>  
 	</div>
 		<footer class="article-footer clearfix">
