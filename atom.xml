@@ -1,117 +1,27 @@
-
- <!DOCTYPE HTML>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
   
-    <title>支付宝后台不死的黑科技 | 落落无尘</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    
-    <meta name="author" content="Jezhee">
-    
-
-    
-    <meta name="description" content="近期支付宝升级到了9.0，除了加入微信功能外，还新增了金钟罩功能，不要说普通的各种加速球，火箭神马的不能杀死他外，连格外牛逼的绿色守护也奈何不了他。在绿色守护里面，支付宝始终显示为“服务正在被 支付宝 使用”，不会自动休眠，恼火死了。那么问题来了，他是怎么做到的呢？">
-<meta property="og:type" content="article">
-<meta property="og:title" content="支付宝后台不死的黑科技">
-<meta property="og:url" content="http://weixinfu.com/2015/07/28/black_technology_in_alipay/index.html">
-<meta property="og:site_name" content="落落无尘">
-<meta property="og:description" content="近期支付宝升级到了9.0，除了加入微信功能外，还新增了金钟罩功能，不要说普通的各种加速球，火箭神马的不能杀死他外，连格外牛逼的绿色守护也奈何不了他。在绿色守护里面，支付宝始终显示为“服务正在被 支付宝 使用”，不会自动休眠，恼火死了。那么问题来了，他是怎么做到的呢？">
-<meta property="og:image" content="http://7xkqab.com1.z0.glb.clouddn.com/sneaky_alipay.png">
-<meta property="og:image" content="http://7xkqab.com1.z0.glb.clouddn.com/sneaky_foreground_service.png">
-<meta property="og:updated_time" content="2015-08-01T14:48:19.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="支付宝后台不死的黑科技">
-<meta name="twitter:description" content="近期支付宝升级到了9.0，除了加入微信功能外，还新增了金钟罩功能，不要说普通的各种加速球，火箭神马的不能杀死他外，连格外牛逼的绿色守护也奈何不了他。在绿色守护里面，支付宝始终显示为“服务正在被 支付宝 使用”，不会自动休眠，恼火死了。那么问题来了，他是怎么做到的呢？">
-
-    
-    <link rel="alternative" href="/atom.xml" title="落落无尘" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/jacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-</head>
-
-  <body>
-    <header>
-      
-<div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="落落无尘" title="落落无尘"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="落落无尘">落落无尘</a></h1>
-				<h2 class="blog-motto">闲看庭前花开花落</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					<ul>
-					 
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/about">About</a></li>
-					
-					<li>
- 					
-						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="st-default-search-input" maxlength="20" placeholder="Search" />
-						</form>
-					
-					</li>
-				</ul>
-			</nav>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install','y4E6-M9Mvg9xHsysWL7g','2.0.0');
-</script>
-	
-</div>
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
+  <title><![CDATA[落落无尘]]></title>
+  <subtitle><![CDATA[闲看庭前花开花落]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://weixinfu.com//"/>
+  <updated>2015-08-01T14:48:19.000Z</updated>
+  <id>http://weixinfu.com//</id>
   
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+  <author>
+    <name><![CDATA[Jezhee]]></name>
     
-      <a href="/2015/07/28/black_technology_in_alipay/" title="支付宝后台不死的黑科技" itemprop="url">支付宝后台不死的黑科技</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jezhee" target="_blank" itemprop="author">Jezhee</a>
-		
-  <p class="article-time">
-    <time datetime="2015-07-28T13:13:17.000Z" itemprop="datePublished"> 发表于 2015-07-28</time>
-    
-  </p>
-</header>
-	<div class="article-content">
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#支付宝干了啥？"><span class="toc-number">1.</span> <span class="toc-text">支付宝干了啥？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#android的漏洞在哪？"><span class="toc-number">2.</span> <span class="toc-text">android的漏洞在哪？</span></a></li></ol>
-		
-		</div>
-		
-		<p>近期支付宝升级到了9.0，除了加入微信功能外，还新增了金钟罩功能，不要说普通的各种加速球，火箭神马的不能杀死他外，连格外牛逼的绿色守护也奈何不了他。在绿色守护里面，支付宝始终显示为“服务正在被 支付宝 使用”，不会自动休眠，恼火死了。那么问题来了，他是怎么做到的呢？<br><a id="more"></a></p>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[支付宝后台不死的黑科技]]></title>
+    <link href="http://weixinfu.com/2015/07/28/black_technology_in_alipay/"/>
+    <id>http://weixinfu.com/2015/07/28/black_technology_in_alipay/</id>
+    <published>2015-07-28T13:13:17.000Z</published>
+    <updated>2015-08-01T14:48:19.000Z</updated>
+    <content type="html"><![CDATA[<p>近期支付宝升级到了9.0，除了加入微信功能外，还新增了金钟罩功能，不要说普通的各种加速球，火箭神马的不能杀死他外，连格外牛逼的绿色守护也奈何不了他。在绿色守护里面，支付宝始终显示为“服务正在被 支付宝 使用”，不会自动休眠，恼火死了。那么问题来了，他是怎么做到的呢？<br><a id="more"></a></p>
 <h1 id="支付宝干了啥？">支付宝干了啥？</h1><p>这就是支付宝在绿色守护里的状态，它一直处在不会被自动休眠的这个category里面。不要问我第一个是啥，后面会有。<br><img src="http://7xkqab.com1.z0.glb.clouddn.com/sneaky_alipay.png" alt="sneaky_alipay"></p>
 <p>我们知道，Android有一个oom的机制，系统会根据进程的优先级，给每个进程一个oom权重值，当系统内存紧张时，系统会根据这个优先级去选择将哪些进程杀掉，以腾出空间保证更高优先级的进程能正常运行。要想让进程长期存活，提高优先级是个不二之选。这个可以在adb中，通过以下命令查看：</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su cat /proc/pid/oom_adj</span><br></pre></td></tr></table></figure>
@@ -131,334 +41,73 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在NotificationManagerService.java中</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">cancelNotificationWithTag</span><span class="params">(String pkg, String tag, <span class="keyword">int</span> id, <span class="keyword">int</span> userId)</span> </span>&#123;</span><br><span class="line">        checkCallerIsSystemOrSameApp(pkg);</span><br><span class="line">        userId = ActivityManager.handleIncomingUser(Binder.getCallingPid(),</span><br><span class="line">                Binder.getCallingUid(), userId, <span class="keyword">true</span>, <span class="keyword">false</span>, <span class="string">"cancelNotificationWithTag"</span>, pkg);</span><br><span class="line">        <span class="comment">// Don't allow client applications to cancel foreground service notis.</span></span><br><span class="line">        cancelNotification(pkg, tag, id, <span class="number">0</span>,</span><br><span class="line">                Binder.getCallingUid() == Process.SYSTEM_UID</span><br><span class="line">                ? <span class="number">0</span> : Notification.FLAG_FOREGROUND_SERVICE, <span class="keyword">false</span>, userId);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实现函数的声明，如果在mustNotHaveFlags里面，请求会被直接弹掉，通知不会被取消。</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">cancelAllNotificationsInt</span><span class="params">(String pkg, <span class="keyword">int</span> mustHaveFlags,</span><br><span class="line">            <span class="keyword">int</span> mustNotHaveFlags, <span class="keyword">boolean</span> doit, <span class="keyword">int</span> userId)</span> </span>&#123;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 <p>从中间可以看到，对于不是系统UID的用户来说，如果Notification带有FLAG_FOREGROUND_SERVICE标记，你是取消不掉的，这类通知只有系统能取消，而给用户的唯一入口就是<code>Service#stopForegroundService</code>，在调用这个接口的时候，会将前台状态置为false，如果传入参数为true，再同时把Notification给cancel掉。看似没有漏洞，然而聪(jian)明(zha)的人还是很多很多的。stop是单向的先取消前台状态，然后cancel notification。也就是说，cancel的时候就不会再去修改service的状态了。所以，假如我同时启动<em>两个</em>service，并且将他们同时置为前台状态，然后<em>共享同一个NotificationID</em>，也是就说，此时会出现两个前台服务，但通知管理器里只有一个关联的通知。 这时我们在其中一个服务中调用 <code>stopForeground(true)</code>，这个服务前台状态会被取消，同时状态栏通知也被移除。 <code>*BUTTTTT！</code>* 另外一个服务呢？他并没有受到影响，还是前台服务状态，但是此时，状态栏通知已经没了！ 这就是支付宝的黑科技。</p>
 <p>下面是一个示例程序，Service名字就叫AlipayService啦: <a href="https://github.com/jezhee/sneaky_foreground_service" target="_blank" rel="external">sneaky_foreground_service</a>. 第一个图里面那个和支付宝一起不会被干掉的就是它了。支付宝的service因为还被其他进程绑定，所以显示 服务正在被 支付宝 使用， 而这个Circles纯粹是演示用，就懒得整了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>近期支付宝升级到了9.0，除了加入微信功能外，还新增了金钟罩功能，不要说普通的各种加速球，火箭神马的不能杀死他外，连格外牛逼的绿色守护也奈何不了他。在绿色守护里面，支付宝始终显示为“服务正在被 支付宝 使用”，不会自动休眠，恼火死了。那么问题来了，他是怎么做到的呢？<br>]]>
+    
+    </summary>
+    
+      <category term="Android" scheme="http://weixinfu.com/tags/Android/"/>
+    
+      <category term="黑科技" scheme="http://weixinfu.com/tags/%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
   
-	</div>
-		<footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
+  <entry>
+    <title><![CDATA[基于Github pages使用hexo建立本博客的步骤记录]]></title>
+    <link href="http://weixinfu.com/2015/07/15/Road_to_Build_Site/"/>
+    <id>http://weixinfu.com/2015/07/15/Road_to_Build_Site/</id>
+    <published>2015-07-15T13:47:17.000Z</published>
+    <updated>2015-07-30T15:18:14.000Z</updated>
+    <content type="html"><![CDATA[<p>github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。</p>
+<a id="more"></a>
+<h1 id="github开分支">github开分支</h1><p>一般个人使用的博客都不是和项目相关的，因此需要新建一个 ${github username}.github.io的项目，并将master分支作为建站主分支。注意，是github<em>.io</em>，不是 <em>.com</em>。</p>
+<h1 id="使用hexo建网站框架">使用hexo建网站框架</h1><p>参考 <a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a>。</p>
+<p>不过其中部署到github的代码有疏漏，要部署到github，需要先安装git插件：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>部署的代码也要改改，没有github这种type，需要改为如下：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">	<span class="attribute">type</span>: git</span><br><span class="line">	<span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:jezhee/jezhee.github.io.git</span><br><span class="line">	<span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+<h1 id="添加站内搜索">添加站内搜索</h1><p>使用百度的站内搜索貌似限制颇多，对我这个完全不懂前端，就想写写markdown的人来说略麻烦。</p>
+<p>使用的是jerryfu推荐的swifytype方案: <a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html" target="_blank" rel="external">利用swiftype为hexo添加站内搜索</a>.</p>
+<h1 id="图床">图床</h1>]]></content>
+    <summary type="html">
+    <![CDATA[<p>github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。</p>]]>
+    
+    </summary>
+    
+      <category term="github" scheme="http://weixinfu.com/tags/github/"/>
+    
+      <category term="hexo" scheme="http://weixinfu.com/tags/hexo/"/>
+    
+  </entry>
   
-  <span></span> <a href="/tags/Android/">Android</a><a href="/tags/黑科技/">黑科技</a>
-  </div>
-
-</div>
-
-
-
-	<div class="article-share" id="share">
-	
-	  <div data-url="http://weixinfu.com/2015/07/28/black_technology_in_alipay/" data-title="支付宝后台不死的黑科技 | 落落无尘" data-tsina="null" class="share clearfix">
-	  </div>
-	
-	</div>
-
-
-</footer>
-
-   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
-
-<div class="next">
-<a href="/2015/07/15/Road_to_Build_Site/"  title="基于Github pages使用hexo建立本博客的步骤记录">
- <strong>下一篇：</strong><br/> 
- <span>基于Github pages使用hexo建立本博客的步骤记录
-</span>
-</a>
-</div>
-
-</nav>
-
-	
-
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
- 
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#支付宝干了啥？"><span class="toc-number">1.</span> <span class="toc-text">支付宝干了啥？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#android的漏洞在哪？"><span class="toc-number">2.</span> <span class="toc-text">android的漏洞在哪？</span></a></li></ol>
- 
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
+  <entry>
+    <title><![CDATA[Android 5.0的坑]]></title>
+    <link href="http://weixinfu.com/2015/07/13/Android%205.0%E7%9A%84%E5%9D%91/"/>
+    <id>http://weixinfu.com/2015/07/13/Android 5.0的坑/</id>
+    <published>2015-07-13T13:47:17.000Z</published>
+    <updated>2015-07-30T15:17:44.000Z</updated>
+    <content type="html"><![CDATA[<p>从用户角度讲，Android L算的上有屎以来最棒的Android系统，无论外观，还是性能，android 5都绝对是最高点。相较于它的前辈们，各方面的提升都相当明显。从体验上讲，离iOS距离越来越近了。当然，如果不是操蛋的墙，使得google service除了耗电别无二用的话， 这个距离还可以更小。</p>
+<p>然而，不是一切都是美好。比如对于码农来讲，新的系统出来，老的代码就必然就会伴随着一番折腾。下面我们就来挑几个说说。</p>
+<a id="more"></a>
+<h1 id="控件透明的判断">控件透明的判断</h1><p>以前显示的好好的头像突然不对了。我们的头像学着ios的风格，都裁剪成了圆形，做法比较简单，重载BitmapDrawable的draw方法，做一些运算即可。代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Canvas canvas)</span> </span>&#123;</span><br><span class="line">    copyBounds(bounds);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// new layer</span></span><br><span class="line">    canvas.saveLayer(<span class="keyword">new</span> RectF(bounds), <span class="keyword">null</span>, Canvas.ALL_SAVE_FLAG);</span><br><span class="line">    <span class="keyword">super</span>.draw(canvas); </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// makeup</span></span><br><span class="line">    paint.setXfermode(<span class="keyword">new</span> PorterDuffXfermode(PorterDuff.Mode.DST_IN));</span><br><span class="line">    canvas.drawBitmap(mask, <span class="keyword">null</span>, bounds, paint); <span class="comment">// mask是一个圆形罩图</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// apply layer</span></span><br><span class="line">    canvas.restore();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在之前，这段简单的代码一直勤勤恳恳的工作，没有出过任何差错。可到了5.0，原本透明的圆形外框变成黑色了。界面刚打开时，还能透过黑色看到后面的luancher背景。开始时以为是硬件加速的原因，把控件由软加速改为了硬件加速，确实，黑框消失了，变正常了，但由于另外一个地方用到了更复杂的剪切和叠加，整个列表滑动变的异常迟滞，只好又改回来。然后我又尝试预先就把图片处理好，创建BitmapDrawable的时候直接赋给它，发现是正常的。后面做调试跟踪，一级级的查下去，突然发现Drawable有个getOpacity方法，这这里返回的居然是PixelFormat.OPAQUE。一想，肯定就是这里了。画到画布上的alpha通道直接被丢弃掉了啊，因为我们传给构造函数的Bitmap是RGB565格式的，默认认为你这个就是没有alpha通道，所以不需要！看看说明，这个方法就是可以重载的。于是，强制返回TRANSLUCENT，OK了。 在自定义Drawable中载入如下代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getOpacity</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> PixelFormat.TRANSLUCENT;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="WebView花屏">WebView花屏</h1><p>在有scrollview的页面，偶尔发现界面花掉了，有时候是像电视没了信号的麻花，有些地方又是界面画的错乱了，特别是点ActionBar上的返回按钮时，特别容易出现。这他妈真的是完全无处可查啊。最后只好svn一个版本一个版本的回滚，耗费大量时间不停的尝试（因为TMD还是偶现啊！），终于找到了一点点踪迹，自从那个版本在首页某一帧加了一个webview之后，只要那个webview调过loadUrl，后面花屏就必现。但什么原因，还是无从知晓，我们什么都没干啊。这玩意拖了很久，后来某一天看android的硬件加速文档时，突发奇想，不会跟这有关系吧？赶紧去把那个webview的硬件加速给关了，再一跑，真的不出现了。这尼玛，坑爹啊。反正给解决了。过两天给google提bug去。</p>
+<h1 id="bound_service">bound service</h1><p>偶现有service在后台跑着跑着就挂了，后面再怎么调startService都爬不起来。根据log可以看到，service的宿主进程的Application的onCreate方法已经被调用，有没有跑完待定。但service的onCreate方法却没有调用到。</p>
+<p>本来以为这是5.0的坑，后来才发现，原来从4.4就已经有了，原因是系统在停掉service时，状态清理出了问题。具体原因另说吧。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>从用户角度讲，Android L算的上有屎以来最棒的Android系统，无论外观，还是性能，android 5都绝对是最高点。相较于它的前辈们，各方面的提升都相当明显。从体验上讲，离iOS距离越来越近了。当然，如果不是操蛋的墙，使得google service除了耗电别无二用的话， 这个距离还可以更小。</p>
+<p>然而，不是一切都是美好。比如对于码农来讲，新的系统出来，老的代码就必然就会伴随着一番折腾。下面我们就来挑几个说说。</p>]]>
+    
+    </summary>
+    
+      <category term="Android" scheme="http://weixinfu.com/tags/Android/"/>
+    
+      <category term="陷阱" scheme="http://weixinfu.com/tags/%E9%99%B7%E9%98%B1/"/>
+    
+  </entry>
   
-
-  
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			
-				<li><a href="/tags/Android/" title="Android">Android<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/陷阱/" title="陷阱">陷阱<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/github/" title="github">github<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/黑科技/" title="黑科技">黑科技<sup>1</sup></a></li>
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-		</ul>
-</div>
-
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-    </ul>
-</div>
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<div class="social-font" class="clearfix">
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	</div>
-			
-		
-
-		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
-		
-		<a href="/about" target="_blank" title="Jezhee">Jezhee</a>
-		
-		
-		</p>
-
-</div>
-</footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-  
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else{
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
-        
-    }
-  });
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  c.click(function(){
-    ta.css('display', 'block').addClass('fadeIn');
-  });
-  o.click(function(){
-    ta.css('display', 'none');
-  });
-  $(window).scroll(function(){
-    ta.css("top",Math.max(140,320-$(this).scrollTop()));
-  });
-});
-</script>
-
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina'),
-      description = $this.attr('description');
-  var html = [
-  '<div class="hoverqrcode clearfix"></div>',
-  '<a class="overlay" id="qrcode"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
-  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-
-  $('.hoverqrcode').hide();
-
-  var myWidth = 0;
-  function updatehoverqrcode(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-    var qrsize = myWidth > 1024 ? 200:100;
-    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
-    var p = $('.article-share-qrcode').position();
-    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
-                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
-                          .qrcode(options);
-  };
-  $(window).resize(function(){
-    $('.hoverqrcode').hide();
-  });
-  $('.article-share-qrcode').click(function(){
-    updatehoverqrcode();
-    $('.hoverqrcode').toggle();
-  });
-  $('.article-share-qrcode').hover(function(){}, function(){
-      $('.hoverqrcode').hide();
-  });
-});   
-</script>
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.article-content').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
-      var alt = this.alt;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-}); 
-</script>
-
-
-
-<!-- Analytics Begin -->
-
-
-
-
-
-<!-- Analytics End -->
-
-<!-- Totop Begin -->
-
-	<div id="totop">
-	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
-	</div>
-	<script src="/js/totop.js"></script>
-
-<!-- Totop End -->
-
-<!-- MathJax Begin -->
-<!-- mathjax config similar to math.stackexchange -->
-
-
-<!-- MathJax End -->
-
-<!-- Tiny_search Begin -->
-
-<!-- Tiny_search End -->
-
-  </body>
-</html>
+</feed>
