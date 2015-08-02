@@ -11,19 +11,16 @@
     
 
     
-    <meta name="description" content="在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。
-但紧接着，奇怪的事情">
+    <meta name="description" content="在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ScrollView嵌套GridView的处理">
 <meta property="og:url" content="http://weixinfu.com/2015/08/01/embedded_scrollview/index.html">
 <meta property="og:site_name" content="落落无尘">
-<meta property="og:description" content="在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。
-但紧接着，奇怪的事情">
-<meta property="og:updated_time" content="2015-08-02T07:05:53.000Z">
+<meta property="og:description" content="在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。">
+<meta property="og:updated_time" content="2015-08-02T07:08:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ScrollView嵌套GridView的处理">
-<meta name="twitter:description" content="在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。
-但紧接着，奇怪的事情">
+<meta name="twitter:description" content="在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。">
 
     
     <link rel="alternative" href="/atom.xml" title="落落无尘" type="application/atom+xml">
@@ -113,7 +110,7 @@
 		
 		</div>
 		
-		<p>在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。</p>
+		<p>在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。<br><a id="more"></a></p>
 <p>但紧接着，奇怪的事情发生了，如果gridview里元素比较少时，表现正常，但如果元素较多，ScrollView可以滚动的时候，就发现每次进入这个Activity，都是定位到最底部，如果元素更多一点，位置则固定在了GridView的顶部。看了半天代码，我没有做scrollTo的操作啊，再把其他不相干的代码回滚，还是无效。在我的项目里面，ScrollView套GridView还有另外一个地方，但那里表现的好好的，开始那里GridView是在顶上，正常，我想，那把GridView放到最底下再试试，x，还是正常。</p>
 <p>郁闷了，没辙，只好google一下。很快，找到解决办法了，<code>GridView#setFcous(false)</code>。一试，还真可以。这我就奇怪了，跟这有毛线关系？跟踪代码看看吧。</p>
 <p>要滚动到GridView位置，肯定会调用到scrollTo吧，和setFocus有关系，肯定会有requestFocus的地方吧，那就在这两个地方下断点，看看调用堆栈。果然，原因立马就找到了。首先，ScrollView布局完成后，会调用requestFocus，跟踪View#requestFocu的代码，一路往下调用了：</p>
@@ -127,9 +124,11 @@
 <p>其实也很好理解，就像你一个页面上放了一个EditText，当进入这个页面时，肯定会希望系统滚动到你的输入框这里。</p>
 <p>剩下另外一个问题了：为什么另外一个页面把GridView放到最底下了，它却没有跟着滑下去呢？答案也很好找，因为处理就在挨着requestChildFocus这个函数下面的这个函数里。先看说明：</p>
 <blockquote>
-<p>When looking for focus in children of a scroll view, need to be a little more careful not to give focus to something that is scrolled off screen. This is more expensive than the default android.view.ViewGroupimplementation, otherwise this behavior might have been made the default.<br>protected boolean onRequestFocusInDescendants(int direction, Rect previouslyFocusedRect);</p>
+<p>When looking for focus in children of a scroll view, need to be a little more careful not to give focus to something that is scrolled off screen. This is more expensive than the default android.view.ViewGroupimplementation, otherwise this behavior might have been made the default.</p>
 </blockquote>
-<p>其中有这样一个判断：if (isOffScreen(nextFocus)) return false;<br>验证一下，把在最底下的GridView放到中间来，再进去，果然就滚到GridView的位置了。</p>
+<p>函数体：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">boolean</span> <span class="title">onRequestFocusInDescendants</span><span class="params">(<span class="keyword">int</span> direction, Rect previouslyFocusedRect)</span> </span>&#123;</span><br><span class="line">	...</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 如果不在显示范围内，跳走</span></span><br><span class="line">	<span class="keyword">if</span> (isOffScreen(nextFocus)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>验证一下，把在最底下的GridView放到中间来，再进去，果然就滚到GridView的位置了。</p>
 <p>再想一想，既然是这样的原因，那其实只要在ScrollView里面放能获取Focus的控件，都会有这个问题，比如ListView，EditText等等，ScrollView会定位到它找到的第一个Focusable Child。<br>衍生一下，在解决问题的过程中，我还发现如果在初始化的时候如果先初始化GridView，设好adapter，然后在初始化adapter的数据源，且不调用BaseAdapter#notifyDataSetChanged,也不会有问题，为啥呢？答案在BaseAdapter的setAdapter函数里面，其中会有checkFocus，如果adapter getCount返回为0，GridView不能获得焦点。而GridView在layout时，它的数据源又已经有了，所以也能够正常的把所有元素布局和绘制出来。当然了，如果后面有数据改动，那么立马就会被打回原形。</p>
   
 	</div>
@@ -200,6 +199,14 @@
 			
 		
 			
+				<li><a href="/tags/android/" title="android">android<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/UI/" title="UI">UI<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/黑科技/" title="黑科技">黑科技<sup>1</sup></a></li>
 			
 		
@@ -213,14 +220,6 @@
 		
 			
 				<li><a href="/tags/陷阱/" title="陷阱">陷阱<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/android/" title="android">android<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/UI/" title="UI">UI<sup>1</sup></a></li>
 			
 		
 		</ul>
