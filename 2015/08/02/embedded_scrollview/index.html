@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>基于Github pages使用hexo建立本博客的步骤记录 | 落落无尘</title>
+    <title>落落无尘</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jezhee">
     
 
     
-    <meta name="description" content="github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。">
+    <meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于Github pages使用hexo建立本博客的步骤记录">
-<meta property="og:url" content="http://weixinfu.com/2015/07/15/Road_to_Build_Site/index.html">
+<meta property="og:title" content="落落无尘">
+<meta property="og:url" content="http://weixinfu.com/2015/08/02/embedded_scrollview/index.html">
 <meta property="og:site_name" content="落落无尘">
-<meta property="og:description" content="github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。">
-<meta property="og:updated_time" content="2015-07-30T15:18:14.000Z">
+<meta property="og:description">
+<meta property="og:updated_time" content="2014-12-14T14:30:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于Github pages使用hexo建立本博客的步骤记录">
-<meta name="twitter:description" content="github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。">
+<meta name="twitter:title" content="落落无尘">
+<meta name="twitter:description">
 
     
     <link rel="alternative" href="/atom.xml" title="落落无尘" type="application/atom+xml">
@@ -90,14 +90,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/07/15/Road_to_Build_Site/" title="基于Github pages使用hexo建立本博客的步骤记录" itemprop="url">基于Github pages使用hexo建立本博客的步骤记录</a>
+      <a href="/2015/08/02/embedded_scrollview/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jezhee" target="_blank" itemprop="author">Jezhee</a>
 		
   <p class="article-time">
-    <time datetime="2015-07-15T13:47:17.000Z" itemprop="datePublished"> 发表于 2015-07-15</time>
+    <time datetime="2015-08-02T06:51:48.000Z" itemprop="datePublished"> 发表于 2015-08-02</time>
     
   </p>
 </header>
@@ -106,30 +106,15 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github开分支"><span class="toc-number">1.</span> <span class="toc-text">github开分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用hexo建网站框架"><span class="toc-number">2.</span> <span class="toc-text">使用hexo建网站框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加站内搜索"><span class="toc-number">3.</span> <span class="toc-text">添加站内搜索</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图床"><span class="toc-number">4.</span> <span class="toc-text">图床</span></a></li></ol>
+			
 		
 		</div>
 		
-		<p>github pages目前看起来是程序员最喜欢的建静态博客的方法了。本文记录一下我建这个博客的过程，留备查看。</p>
-<a id="more"></a>
-<h1 id="github开分支">github开分支</h1><p>一般个人使用的博客都不是和项目相关的，因此需要新建一个 ${github username}.github.io的项目，并将master分支作为建站主分支。注意，是github<em>.io</em>，不是 <em>.com</em>。</p>
-<h1 id="使用hexo建网站框架">使用hexo建网站框架</h1><p>参考 <a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a>。</p>
-<p>不过其中部署到github的代码有疏漏，要部署到github，需要先安装git插件：</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<p>部署的代码也要改改，没有github这种type，需要改为如下：</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">	<span class="attribute">type</span>: git</span><br><span class="line">	<span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:jezhee/jezhee.github.io.git</span><br><span class="line">	<span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
-<h1 id="添加站内搜索">添加站内搜索</h1><p>使用百度的站内搜索貌似限制颇多，对我这个完全不懂前端，就想写写markdown的人来说略麻烦。</p>
-<p>使用的是jerryfu推荐的swifytype方案: <a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html" target="_blank" rel="external">利用swiftype为hexo添加站内搜索</a>.</p>
-<h1 id="图床">图床</h1>  
+		  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/github/">github</a><a href="/tags/hexo/">hexo</a>
-  </div>
 
 </div>
 
@@ -137,7 +122,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://weixinfu.com/2015/07/15/Road_to_Build_Site/" data-title="基于Github pages使用hexo建立本博客的步骤记录 | 落落无尘" data-tsina="null" class="share clearfix">
+	  <div data-url="http://weixinfu.com/2015/08/02/embedded_scrollview/" data-title="落落无尘" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -150,19 +135,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/07/28/black_technology_in_alipay/" title="支付宝后台不死的黑科技">
-  <strong>上一篇：</strong><br/>
-  <span>
-  支付宝后台不死的黑科技</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/07/13/Android 5.0的坑/"  title="Android 5.0的坑">
+<a href="/2015/07/28/black_technology_in_alipay/"  title="支付宝后台不死的黑科技">
  <strong>下一篇：</strong><br/> 
- <span>Android 5.0的坑
+ <span>支付宝后台不死的黑科技
 </span>
 </a>
 </div>
@@ -177,7 +154,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github开分支"><span class="toc-number">1.</span> <span class="toc-text">github开分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用hexo建网站框架"><span class="toc-number">2.</span> <span class="toc-text">使用hexo建网站框架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加站内搜索"><span class="toc-number">3.</span> <span class="toc-text">添加站内搜索</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图床"><span class="toc-number">4.</span> <span class="toc-text">图床</span></a></li></ol>
+ 
  
   </div>
 
