@@ -5,7 +5,7 @@
   <subtitle><![CDATA[闲看庭前花开花落]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://weixinfu.com//"/>
-  <updated>2015-08-02T07:04:56.000Z</updated>
+  <updated>2015-08-02T07:05:53.000Z</updated>
   <id>http://weixinfu.com//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://weixinfu.com/2015/08/01/embedded_scrollview/"/>
     <id>http://weixinfu.com/2015/08/01/embedded_scrollview/</id>
     <published>2015-08-01T06:54:00.000Z</published>
-    <updated>2015-08-02T07:04:56.000Z</updated>
+    <updated>2015-08-02T07:05:53.000Z</updated>
     <content type="html"><![CDATA[<p>在项目里面，有一个页面，整体是一个ScrollView，展示的是一个配置页面，其中一个子控件是一张包含多个缩略图的大图。 近期，策划提出一个新需求，要把原本这个整张的缩略图拆开为一张张的小图，以便单独响应点击事件。初一看，一个GridView替上去不就完事了嘛，再改改GridView的OnMeasure，让它的高度自适应放到ScrollView里面，这活似乎就完成的妥妥的了。</p>
 <p>但紧接着，奇怪的事情发生了，如果gridview里元素比较少时，表现正常，但如果元素较多，ScrollView可以滚动的时候，就发现每次进入这个Activity，都是定位到最底部，如果元素更多一点，位置则固定在了GridView的顶部。看了半天代码，我没有做scrollTo的操作啊，再把其他不相干的代码回滚，还是无效。在我的项目里面，ScrollView套GridView还有另外一个地方，但那里表现的好好的，开始那里GridView是在顶上，正常，我想，那把GridView放到最底下再试试，x，还是正常。</p>
 <p>郁闷了，没辙，只好google一下。很快，找到解决办法了，<code>GridView#setFcous(false)</code>。一试，还真可以。这我就奇怪了，跟这有毛线关系？跟踪代码看看吧。</p>
